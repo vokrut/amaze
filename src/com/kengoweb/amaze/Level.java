@@ -25,7 +25,7 @@ public class Level {
         NamedNodeMap layerAttributes = document.getElementsByTagName("layer").item(0).getAttributes();
         height = Integer.parseInt(layerAttributes.getNamedItem("height").getNodeValue());
         width = Integer.parseInt(layerAttributes.getNamedItem("width").getNodeValue());
-        squares = new int[width][height];
+        squares = new int[height][width];
 
         Node dataNode = document.getElementsByTagName("data").item(0);
         String data = dataNode.getTextContent();
